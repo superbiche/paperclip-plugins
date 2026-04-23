@@ -1,0 +1,58 @@
+{
+  "name": "@superbiche/paperclip-ntfy-notifier",
+  "version": "0.0.0",
+  "description": "External Paperclip plugin that pushes agent-run and issue-lifecycle events to ntfy.sh.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/superbiche/paperclip-plugins/tree/main/packages/ntfy-notifier#readme",
+  "bugs": {
+    "url": "https://github.com/superbiche/paperclip-plugins/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superbiche/paperclip-plugins",
+    "directory": "packages/ntfy-notifier"
+  },
+  "keywords": [
+    "paperclip",
+    "paperclipai",
+    "plugin",
+    "ntfy",
+    "notifications",
+    "push"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "paperclipPlugin": {
+    "manifest": "./dist/manifest.js",
+    "worker": "./dist/worker.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@paperclipai/plugin-sdk": "^2026.416.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
