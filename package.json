@@ -1,0 +1,27 @@
+{
+  "name": "@superbiche/paperclip-plugins",
+  "version": "0.0.0",
+  "private": true,
+  "description": "External plugins for paperclipai/paperclip — ecosystem extensions that subscribe to domain events, register UI surfaces, or bridge to external services.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superbiche/paperclip-plugins"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "clean": "pnpm -r clean",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0",
+    "@types/node": "^24.6.0",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
